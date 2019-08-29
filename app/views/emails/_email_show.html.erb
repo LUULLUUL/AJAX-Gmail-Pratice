@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Email reader</h2>         
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Object: <%=selectedEmail.object%> </td>
+      </tr> 
+      <tr>
+      <td>body : <%=selectedEmail.body%> </td>
+    </tr> 
+
+    </tbody>
+    <%= link_to "marquer comme non-lu", email_path(selectedEmail.id), method: :put, remote: true%>
+  </table>
+</div>
